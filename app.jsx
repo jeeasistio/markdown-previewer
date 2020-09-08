@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { CssBaseline, TextField, Typography, Box } from '@material-ui';
-import marked from 'marked';
+import parse from 'html-react-parser';
 
 const App = () => {
   
@@ -21,9 +21,9 @@ const App = () => {
           onChange={(e) => setInputText(e.target.value)}
          />
         <Typography paragraph align="center" variant="h6">{inputText && 'Preview'}</Typography>
-        <Box
-          dangerouslySetInnerHTML={{__html: marked(inputText)}}
-         />
+        <Box>
+          {parse(marked(inputText))}
+        </Box>
       </Box>
     </CssBaseline>
   )

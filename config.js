@@ -14,7 +14,7 @@ SystemJS.config({
     'react': 'react@16.13.1/umd/react.production.min.js',
     'react-dom': 'react-dom@16.13.1/umd/react-dom.production.min.js',
     '@material-ui': '@material-ui/core@latest/umd/material-ui.production.min.js',
-    'marked': 'https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.min.js'
+    'html-react-parser': 'html-react-parser@latest/dist/html-react-parser.min.js'
   },
   transpiler: 'plugin-babel'
 });
